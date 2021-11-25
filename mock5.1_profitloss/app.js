@@ -5,7 +5,7 @@ let outputEle=document.getElementById('output')
 btn.addEventListener("click",calculate)
 
 function calculate(){
-    // outputEle.innerHTML=""  //not needed as else statement is there
+    
     if(inputs[0].value>0 && inputs[1].value>0){
         if(inputs[0].value>inputs[1].value){
             outputEle.innerHTML=`loss of ${inputs[0].value -inputs[1].value}`

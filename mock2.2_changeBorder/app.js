@@ -5,7 +5,6 @@ nameEle.style.border='1px solid black'
 Array.from(btn).forEach(function(element){
     
     element.addEventListener('click',()=>{
-        nameEle.style.border='1px solid black'
         if(element.innerText=='5px'){
             nameEle.style.border='5px solid black'
         }else if(element.innerText=='10px'){

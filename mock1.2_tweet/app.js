@@ -1,10 +1,13 @@
 let inputTxt=document.getElementById('inputTxt')
 let btn=document.getElementById('button')
 
-input.addEventListener("click",()=>btnState(false))
+inputTxt.addEventListener("input",btnState)
 
 btn.disabled=true
 
-// function btnState(val){
-//     btn.disabled=val
-// }
+function btnState(){
+    console.log(inputTxt.value.length)
+    if(inputTxt.value.length>0){
+        btn.disabled=false
+    }
+}

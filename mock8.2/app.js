@@ -13,7 +13,7 @@ function fetchApi() {
                 output.innerHTML+=`<p>${element.id} - ${element.name}</p>`
             })
         })
-        .catch(error=>console.group(error))
+        .catch(error=>console.log(error))
 }
 
 
